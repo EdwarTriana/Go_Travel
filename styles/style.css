@@ -1,0 +1,575 @@
+body{
+    margin: 0%;
+   
+}
+.navbar-nav.navbar-center {
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
+} 
+
+.logo {
+    width: 8rem;
+    height: 8rem;
+}
+
+.bg-color1 {
+    background-color: #FFFF00;
+}
+.bg-color2{
+    background-color: #001BBF;
+}
+.bg-color3 {
+   background-color:  #FF0000;
+}
+.nav-item {
+    border-radius: 20rem;
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+    font-family: Arial, Helvetica, sans-serif;   
+}
+
+.linea {
+    display: flex;
+    justify-content: center;
+    border-style: solid;
+    margin: 5px;
+    width: 100%;
+    color: #FFFF00;
+    
+}
+.linea2 {
+    display: flex;
+    justify-content: center;
+    border-style: solid;
+    margin: 5px;
+    width: 100%;
+    color: #001BBF;
+    
+}
+.linea3 {
+    display: flex;
+    justify-content: center;
+    border-style: solid;
+    margin: 5px;
+    width: 100%;
+    color: #FF0000;
+}
+/* hasta aqui val la barra de navegacion*/
+
+/*contenedor slogan y boton mas informacion*/
+.card-img-top {
+    height: 22rem;
+}
+
+.main-section {
+    background-image:  url("../image/playa.jpg");
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    height: 30rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+h1{
+    text-shadow: 2px 2px 2px black;
+    padding-bottom: 1rem;
+}
+
+.contenido {
+    padding-top: 10rem;
+    width: 100%;
+}
+
+.main-button {
+    background-color: #001BBF;
+    color: #ffff;
+    padding: 0.5rem;
+    border-radius: 5rem;
+    
+}
+
+#media {
+    scroll-behavior: smooth !important;
+}
+#paquetes {
+    scroll-behavior: smooth;
+}
+#cotiza {
+    scroll-behavior: smooth;
+}
+
+/*slider */
+
+
+h2{
+    text-align: center;
+    font-size: 45px;
+    font-family: arial;
+    margin-top: 1px;
+    color: rgb(255, 255, 255);
+    text-shadow: 0px 0px 6px rgb(0, 0, 0);
+}
+
+.content-all{
+    width: 210px;
+    margin: auto;
+    perspective: 1200px;
+    position: relative;
+    margin-top: 50px;
+}
+
+.content-carrousel{
+    width: 100%;
+    position: absolute;
+    animation: rotar 20s infinite linear;
+    transform-style: preserve-3d;
+}
+
+.content-carrousel:hover{
+    animation-play-state: paused;
+    cursor: pointer;
+}
+
+
+.content-carrousel figure{
+    width: 110%;
+    height: 120px;
+    overflow: hidden;
+    position: absolute;
+    box-shadow: 0px 0px 20px 0px rgb(0, 0, 0);
+    transition: all 300ms;
+    
+}
+
+.content-carrousel figure:hover{
+    box-shadow: 0px 0px 0px 0px rgb(0, 0, 0);
+    transition: all 300ms;
+}
+
+.content-carrousel figure:nth-child(1){transform: rotateY(0deg) translateZ(300px);}
+.content-carrousel figure:nth-child(2){transform: rotateY(40deg) translateZ(300px);}
+.content-carrousel figure:nth-child(3){transform: rotateY(80deg) translateZ(300px);}
+.content-carrousel figure:nth-child(4){transform: rotateY(120deg) translateZ(300px);}
+.content-carrousel figure:nth-child(5){transform: rotateY(160deg) translateZ(300px);}
+.content-carrousel figure:nth-child(6){transform: rotateY(200deg) translateZ(300px);}
+.content-carrousel img{
+    width: 100%;
+    transition: all 300ms;
+}
+
+.content-carrousel img:hover{
+    transform: scale(1.2);
+    transition: all 300ms;
+}
+
+
+@keyframes rotar{
+    from{
+        transform: rotateY(0deg);
+    }to{
+        transform: rotateY(360deg);
+    }
+}
+
+/* Container keyframe  Ajuste*/
+
+.container-key-frame {
+    padding: 20%;
+    background-image: url(../image/WhatsApp\ Image\ 2021-02-15\ at\ 13.02.48.jpeg);
+    padding-bottom: 10rem;
+    /* Ajueste */
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;
+}
+
+
+/* lista porque contratar con nosotros*/
+
+.tittle {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.caracteristicas {
+    background-image: url("../image/puente.jpg");
+    
+    
+    
+    justify-content: center;
+   
+    width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    flex-direction: wrap;
+
+}
+
+.card-body1 {
+    text-align: center;
+    padding: 2rem,;
+    display: flex;
+    justify-content: center;
+    
+    background-color: #FFF792;
+    color: #fff;
+    border-radius: 10%;
+    text-shadow: 2px 2px 2px black;
+    
+}
+.card-body2 {
+    text-align: center;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: wrap;
+    background-color: #FFF792;
+    color: #fff;
+    border-radius: 10%;
+    text-shadow: 2px 2px 2px black;
+    
+}
+.card-body3 {
+    text-align: center;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    
+    background-color: #435EFF;
+    color: #fff;
+    border-radius: 10%;
+    text-shadow: 2px 2px 2px black;
+}
+.card-body4 {
+    text-align: center;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    
+    background-color: #435EFF;
+    color: #fff;
+    border-radius: 10%;
+    text-shadow: 2px 2px 2px black;
+}
+.card-body5 {
+    text-align: center;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    
+    background-color: #F08080;
+    color: #fff;
+    border-radius: 10%;
+    text-shadow: 2px 2px 2px black;
+}
+.card-body6 {
+    text-align: center;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    
+    background-color: #F08080;
+    color: #fff;
+    border-radius: 10%;
+    text-shadow: 2px 2px 2px black;
+}
+.card{
+   
+    border-radius: 1rem;
+     width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+}
+.card-body1:hover {
+    background-color: #000000;
+    color: #fff;
+    transition: 1s;
+}
+.card-body2:hover {
+    background-color: #000000;
+    color: #fff;
+    transition: 1s;
+}
+.card-body3:hover {
+    background-color: #000000;
+    color: #fff;
+    transition: 1s;
+}
+.card-body4:hover {
+    background-color: #000000;
+    color: #fff;
+    transition: 1s;
+}
+.card-body5:hover {
+    background-color: #000000;
+    color: #fff;
+    transition: 1s;
+}
+.card-body6:hover {
+    background-color: #000000;
+    color: #fff;
+    transition: 1s;
+}
+
+/* Aqui termina porque contratar con nosotros*/
+/*Inicio formulario y calculadora*/
+
+.bg-image {
+    background-image: url("../image/playaformulario\ \(2\).jpeg");
+}
+.bg-image2 {
+    background-image: url("../image/atardecer.jpeg");
+}
+
+
+/* Aqui comienza la galeria o media*/
+
+.galery {
+    background: #444;
+    margin-top: 4rem;
+    font-family: monospace;
+    width: 100%;
+  }
+  
+  h1 {
+    color: #fff;
+    text-align: center;
+  }
+  
+  /*Estilos de la galeria*/
+  
+  .galeria {
+    width: 100%;
+    margin: auto;
+    list-style: none;
+    padding: 20px;
+    box-sizing: border-box;
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .galeria li {
+    margin: 5px;
+  }
+  
+  .galeria img {
+    width: 250px;
+    height: 200px;
+  }
+  
+  /*Estilos del modal*/
+  
+  .modal {
+    display: none;
+  }
+  
+  .modal:target {
+    
+    display: block;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.8);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .modal h3 {
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+    margin: 15px 0;
+  }
+  
+  .imagen {
+    width: 100%;
+    height: 50%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .imagen a {
+    color: #fff;
+    font-size: 40px;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+  
+  .imagen a:nth-child(2) {
+    margin: 0;
+    height: 100%;
+    flex-shrink: 2;
+  }
+  
+  .imagen img {
+    width: 500px;
+    height: 100%;
+    max-width: 100%;
+    border: 7px solid #fff;
+    box-sizing: border-box;
+  }
+  
+  .cerrar {
+    display: block;
+    background: #fff;
+    width: 25px;
+    height: 25px;
+    margin: 15px auto;
+    text-align: center;
+    text-decoration: none;
+    font-size: 25px;
+    color: #000;
+    padding: 5px;
+    border-radius: 50%;
+    line-height: 25px;
+  }
+
+  /* Aqui comienza termina la galeria o media*/
+  /* Aqui comienza el footer*/
+  *{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+footer{
+    width: 100%;
+    background: #202020;
+    color: white;   
+    
+}
+
+.container-footer-all{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 2px;
+}
+
+.container-body{
+    display: flex;
+    justify-content: space-between;
+}
+
+.colum1{
+    max-width: 400px;
+}
+
+.colum1 h1{
+    font-size: 22px;
+}
+
+.colum1 p{
+    font-size: 14px;
+    color: #C7C7C7;
+    margin-top: 80px;
+}
+
+.colum2{
+    max-width: 400px;
+    
+}
+
+.colum2 h1{
+    font-size: 22px;
+}
+
+.row{
+    margin-top: 20px;
+    display: flex;
+}
+
+.row img{
+    width: 36px;
+    height: 36px;
+}
+
+.row label{
+    margin-top: 10px;
+    margin-left: 20px;
+    color: #C7C7C7;
+}
+
+.colum3{
+    max-width: 400px;
+}
+
+.colum3 h1{
+    font-size: 22px;
+}
+
+.row2{
+    margin-top: 20px;
+    display: flex;
+}
+
+.row2 img{
+    width: 36px;
+    height: 36px;
+}
+
+.row2 label{
+    margin-top: 10px;
+    margin-left: 20px;
+    max-width: 140px;
+}
+
+.container-footer{
+    width: 100%;  
+    background: #101010;
+}
+
+.footer{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;  
+    padding: 10px;
+}
+
+.copyright{
+    color: #C7C7C7;
+}
+
+.copyright a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.information a{
+    text-decoration: none;
+    color: #C7C7C7;
+}
+
+
+@media screen and (max-width: 1100px){
+    
+    .container-body{
+        flex-wrap: wrap;
+    }
+    
+    .colum1{
+        max-width: 100%;
+    }
+    
+    .colum2,
+    .colum3{
+        margin-top: 40px;
+    }
+}
+
