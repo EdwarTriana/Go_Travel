@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--styles css-->
+    <link rel="stylesheet" href="./styles/style.css">
+
+    <!--sript de javascript-->
+    
+
+     <!-- Bootstrap CSS -->
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <title> Go Travel</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <a class="navbar-brand" href="#menu"> <img class="logo" src="./image/logo.jpeg" alt="logo_go_travel"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav navbar-center">
+              <li class="nav-item bg-color1 m-4 active">
+                <a class="nav-link text-white" href="#galeria"> GALERIA <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item bg-color2 m-4">
+                <a class="nav-link text-white" href="#paquetes"> PAQUETES</a>
+              </li>
+              <li class="nav-item bg-color3 m-4">
+                <a class="nav-link text-white" href="#cotiza">COTIZA</a>
+              </li>
+            </ul>
+          </div>
+          
+    </nav>
+    <div class="linea"></div>
+    <div class="linea2"></div>
+    <div class="linea3"></div>
+
+    <!--contenedor slogan y boton mas informacion-->
+    <section class="main-section">
+      <div class="contenido">
+        <h1> vive una experiencia soñada</h1>
+        <a href="#menu" class="main-button"> Mas Informacion</a>
+      </div>
+    </section>
+
+    <!--tarjetas paquetes slider-->
+    
+    <div class="container-key-frame">
+      <header>
+          <h2 id="paquetes">PAQUETES</h2>
+      </header>
+      <div class="content-all">
+          <div class="content-carrousel">
+            <figure><a onclick="llanos()" href="#picar"> <img src="./image/llan.png"></a></figure>
+            <figure> <a onclick="sanandres()" href="#picar"><img src="./image/san2 (1).png"></a></figure>
+            <figure> <a onclick="ejecafetero()" href="#picar"><img src="./image/eje.png"></a></figure>
+            <figure> <a onclick="costacaribe()" href="#picar"><img src="./image/CAG2 (1).png"></a></figure> 
+            <figure> <a onclick="antioquia()"  href="#picar"><img src="./image/rhhht.jfif"></a></figure> 
+             <figure> <a onclick="amazonia()" href="#picar"><img src="./image/ffff.jfif"></a></figure> 
+       
+          </div>
+      </div>
+  </div>
+
+   <!--porque contratar con nosotros-->
+
+   <h3 class="tittle bg-color">PORQUE RESERVAR CON NOSOTROS</h3>
+   <div class="caracteristicas w-100">
+    <div class="card">
+      <div class="card-body1">
+        Brindamos la mejor asesoria para tu viaje
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-body2">
+        Te ofrecemos una aventura
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-body3">
+        Paraisos hermosos
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-body4">
+        Contamos con los mejores planes de viaje
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-body5">
+        Hospedaje unico cinco estrellas
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-body6">
+        seguridad y confianza
+      </div>
+      <div class="card">
+        <div class="card-body6">
+          Transporte comodo y seguro
+        </div>
+    </div>
+   </div>
+ <!--hasta aqui porque contratar con nosotros-->
+
+<div class="container mt-4">
+  <div class="w-100 d-flex"> 
+    <!--Inicio Formulario-->
+<div class="col-md-6 bg-image2 m-2">
+  <ul class="nav-link text-white">
+    <p>Déjenos sus datos para que un asesor se comunique con usted</p>
+  </ul>
+    <form>
+        <div class="form-row">
+          <div class="form-group col-md-6 text-white">
+            <label for="inputEmail4">Email</label>
+            <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+          </div>
+          <div class="form-group col-md-6 text-white">
+            <label for="inputPassword4">Nombres</label>
+            <input type="password" class="form-control" id="inputPassword4" placeholder="Nombres">
+          </div>
+        </div>
+        
+        <div class="form-row">
+          <div class="form-group col-md-6 text-white">
+            <label for="inputCity">Ciudad</label>
+            <input type="text" class="form-control" id="inputCity">
+          </div>
+          <div class="form-group col-md-6 text-white">
+            <label for="inputPassword4">Teléfono</label>
+            <input type="text" class="form-control" id="inputPassword4" placeholder="Número de Teléfono">
+          </div>
+        </div>
+        <div class="form-group text-white">
+          <label for="inputAddress">Comentarios</label>
+          <input type="text" class="form-control" id="inputAddress" placeholder="Deja aquí tus comentarios">
+        </div>
+        <div class="form-group">
+          <div class="form-check text-white">
+            <input class="form-check-input" type="checkbox" id="gridCheck">
+            <label class="form-check-label" for="gridCheck">
+              Check me out
+            </label>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+</form>
+ </div>
+ <!--Fin de Formulario-->
+ <!--Inicio Calculadora-->
+ <div class="col-md-6 bg-image m-2" id="cotiza">
+  <ul class="nav-link text-white" style="text-align: center;">
+    <p>Cotiza aquí tu plan</p>
+  </ul>
+  <form>
+    <div class="form-group text-white">
+      <label for="inputAddress">Selecciona tu Plan</label>
+      <select class="form-control" id="inputAddress" placeholder="Lista desplegable" name="options">
+        <option value="Plan_1">Costa Caribe </option>
+        <option value="Plan_2">Eje Cafetero</option>
+        <option value="Plan_3">Antioquia</option>
+        <option value="Plan_4">Oriente</option>
+        <option value="Plan_5">San Andrés</option>
+        <option value="Plan_6">Amazonía</option>
+      </select>
+    </div>
+    <div class="form-row">
+      <div class="form-group col-md-6 text-white">
+      <label for="inputEmail4">¿Cuantos días y Noches?</label>
+      <select type="email" class="form-control" id="inputEmail4" placeholder="Lista desplegable" name="options">
+        <option value="Plan_1" id="plan1">2 días 1 Noche </option>
+        <option value="Plan_2">3 días 2 Noches </option>
+        <option value="Plan_3">4 días 3 Noches </option>
+        <option value="Plan_4">5 días 4 Noches </option>
+        <option value="Plan_5">6 días 5 Noches </option>
+        <option value="Plan_6">7 días 6 Noches </option>
+          </select>
+        </div>
+        <div class="form-group col-md-6 text-white">
+          <label for="inputPassword4">Número de Personas</label>
+          <input type="number" class="form-control" id="inputPassword4" placeholder="Digita la cantidad de personas">
+        </div>
+      </div>
+      
+      <div class="form-row">
+        <div class="form-group col-md-6 text-white">
+          <label for="inputCity">Valor</label>
+          <input type="number" class="form-control" id="inputCity">
+        </div>
+        
+      </div>
+      <div class="form-group text-white">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="gridCheck">
+          <label class="form-check-label" for="gridCheck">
+            Check me out
+          </label>
+        </div>
+      </div>
+      <button onclick="resultado()" type="submit" class="btn btn-primary">Calcular</button>
+</form>
+</div>
+
+ <!--Fin Calculadora-->
+  </div>
+  
+ 
+
+</div>
+
+  <!--aqui comienza la galeria o media-->
+  <div class="galery w-100">
+    <h1 id="galeria">Galería</h1>
+  
+    <ul class="galeria">
+      <li><a href="#img1"><img src="./image/1.jpg"></a></li>
+      <li><a href="#img2"><img src="./image/2.jfif"></a></li>
+      <li><a href="#img3"><img src="./image/3.jfif"></a></li>
+      <li><a href="#img4"><img src="./image/4.jfif"></a></li>
+      <li><a href="#img5"><img src="./image/5.jpg"></a></li>
+      <li><a href="#img6"><img src="./image/6.jfif"></a></li>
+      <li><a href="#img7"><img src="./image/dd.jfif"></a></li>
+      <li><a href="#img8"><img src="./image/8.jfif"></a></li>
+    </ul>
+  
+    <div class="modal" id="img1">
+      <h3>Paisaje 1</h3>
+      <div class="imagen">
+        <a href="#img8">&#60;</a>
+        <a href="#img2"><img src="./image/1.jpg"></a>
+        <a href="#img2">></a>
+      </div>
+      <a class="cerrar" href="">X</a>
+    </div>
+    
+    <div class="modal" id="img2">
+      <h3>Paisaje 2</h3>
+      <div class="imagen">
+        <a href="#img1">&#60;</a>
+        <a href="#img3"><img src="./image/2.jfif"></a>
+        <a href="#img3">></a>
+      </div>
+      <a class="cerrar" href="">X</a>
+    </div>
+    
+    <div class="modal" id="img3">
+      <h3>Paisaje 3</h3>
+      <div class="imagen">
+        <a href="#img2">&#60;</a>
+        <a href="#img4"><img src="./image/3.jfif"></a>
+        <a href="#img4">></a>
+      </div>
+      <a class="cerrar" href="">X</a>
+    </div>
+    
+    <div class="modal" id="img4">
+      <h3>Paisaje 4</h3>
+      <div class="imagen">
+        <a href="#img3">&#60;</a>
+        <a href="#img1"><img src="./image/4.jfif"></a>
+        <a href="#img1">></a>
+      </div>
+      <a class="cerrar" href="">X</a>
+    </div>
+  
+    <div class="modal" id="img5">
+        <h3>Paisaje 5</h3>
+        <div class="imagen">
+          <a href="#img3">&#60;</a>
+          <a href="#img1"><img src="./image/5.jpg"></a>
+          <a href="#img1">></a>
+        </div>
+        <a class="cerrar" href="">X</a>
+      </div>
+  
+      <div class="modal" id="img6">
+        <h3>Paisaje 6</h3>
+        <div class="imagen">
+          <a href="#img3">&#60;</a>
+          <a href="#img1"><img src="./image/6.jfif"></a>
+          <a href="#img1">></a>
+        </div>
+        <a class="cerrar" href="">X</a>
+      </div>
+  
+      <div class="modal" id="img7">
+        <h3>Paisaje 7</h3>
+        <div class="imagen">
+          <a href="#img3">&#60;</a>
+          <a href="#img1"><img src="./image/dd.jfif"></a>
+          <a href="#img1">></a>
+        </div>
+        <a class="cerrar" href="">X</a>
+      </div>
+  
+      <div class="modal" id="img8">
+        <h3>Paisaje 8</h3>
+        <div class="imagen">
+          <a href="#img3">&#60;</a>
+          <a href="#img1"><img src="./image/8.jfif"></a>
+          <a href="#img1">></a>
+        </div>
+        <a class="cerrar" href="">X</a>
+      </div>
+  </div>
+  
+    <!--aqui termina la galeria o media-->
+
+    <!--Aqui Inicia el footer-->
+     <footer>
+       
+       <div class="container-footer-all">
+        
+            <div class="container-body">
+
+                <div class="colum1">
+                    <h1>Mas informacion de la compañia</h1>
+                    <p>Esta compañía esta diseñada a fortalecer y reactivar el campo turístico laboral debido a la baja de la pandemia y darle a conocer a los usuarios una experiencia inolvidable de cada paquete que tenemos para ellos.</p>
+                </div>
+
+                <div class="colum2">
+
+                    <h1>Redes Sociales</h1>
+
+                    <div class="row">
+                        <img src="./icon/facebook.png">
+                        <label>Siguenos en Facebook</label>
+                    </div>
+                    <div class="row">
+                        <img src="./icon/twitter.png">
+                        <label>Siguenos en Twitter</label>
+                    </div>
+                    <div class="row">
+                        <img src="./icon/PikPng.com_circulo-dorado-png_3633368.png">
+                        <label>Siguenos en Instagram</label>
+                    </div>
+                                        
+                </div>
+
+                <div class="colum3">
+
+                    <h1>Nuestro Equipo</h1>
+
+                    <div class="row2">
+                        <img src="./icon/icon faces.jpg">
+                        <label>
+                            Scrum Master: Jefersson Arana
+
+                            Product Owner: Edwar Triana
+
+                            Diseñador web: Jorge Rincon
+                        </label>
+                    </div>                         
+
+                </div>
+
+            </div>
+        
+        </div>
+        
+        <div class="container-footer">
+               <div class="footer">
+                    <div class="copyright">
+                        © 2021 Todos los Derechos Reservados | <a href="">Go Travel</a>
+                    </div>
+
+                    <div class="information">
+                        <a href="">Informacion Compañia</a> | <a href="">Privacion y Politica</a> | <a href="">Terminos y Condiciones</a>
+                    </div>
+                </div>
+
+            </div>
+        
+    </footer>
+ 
+  <!--Finalizacion del footer-->
+  
+
+
+
+
+   
+    
+    <script src="./javascript/script.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>  
+</body>
+</html>
